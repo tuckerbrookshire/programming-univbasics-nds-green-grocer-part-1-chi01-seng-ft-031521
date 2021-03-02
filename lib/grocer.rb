@@ -13,6 +13,7 @@ end
 def consolidate_cart(cart)
   new_cart = []
   cart.each do |grocery|
+    binding.pry
     find_item_by_name_in_collection(cart)
     if new_cart[:item]
       new_cart[:item][:count] = 1
