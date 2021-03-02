@@ -15,6 +15,7 @@ def consolidate_cart(cart)
   cart.each do |grocery|
     found_item = find_item_by_name_in_collection(grocery[:item], new_cart)
     if !found_item
+      
       binding.pry
     
     end
