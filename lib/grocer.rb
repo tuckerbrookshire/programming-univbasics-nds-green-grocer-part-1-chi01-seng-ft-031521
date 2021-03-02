@@ -21,7 +21,6 @@ def consolidate_cart(cart)
       found_item[:count]+=1
     end
   end
-  binding.pry
   new_cart
 end
 
