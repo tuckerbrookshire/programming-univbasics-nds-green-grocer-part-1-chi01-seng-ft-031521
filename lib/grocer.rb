@@ -18,10 +18,10 @@ def consolidate_cart(cart)
       grocery[:count] = 1
       new_cart << grocery
     else
-      binding.pry
-    
+      found_item[:count]+=1
     end
   end
+  binding.pry
   new_cart
 end
 
