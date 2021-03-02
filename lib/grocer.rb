@@ -15,9 +15,9 @@ def consolidate_cart(cart)
   cart.each do |grocery|
     find_item_by_name_in_collection(cart)
     if new_cart[:item]
-      new_cart[:item][:count] =
-    elsif grocery[:item].count > 1
-      grocery[:count] += 1
+      new_cart[:item][:count] = 1
+    elsif new_cart[:item][:count] > 1
+      new_cart[:count] += 1
     end
   end
   new_cart
